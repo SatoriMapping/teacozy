@@ -84,7 +84,7 @@ section {
 }
 
 .hero {
-    background-image: url('resources/img-mission-background.jpg');
+    background-image: url('img-mission-background.jpg');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ section {
 
 /* Locations section */
 .locations {
-    background-image: url('resources/img-locations-background.jpg');
+    background-image: url('img-locations-background.jpg');
     background-position: center top 50%;
     background-size: cover;
     display: flex;
