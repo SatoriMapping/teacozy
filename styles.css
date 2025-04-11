@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    opacity: 0.9;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+    overscroll-behavior-y: none;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#logo {
+    height: 50px;
+    margin: 10px;
+    float: left;
+}
+
+#logo img{
+    height: 100%;
+    opacity: 1;
+}
+
+/* Header */
+.header {
+    top: 0;
+    height: 69px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    z-index: 1;
+    opacity: 1;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    color: seashell; 
+    text-decoration: underline; 
+}
+
+.navigation a:hover {
+    color: lightcoral; 
+    text-decoration: none; 
+}
+
+/* Main section */
+main {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 70px;
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    background-image: url('resources/img-mission-background.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 1200px;
+    max-width: 100%;
+}
+
+.hero div{
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Featured section */
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured h4{
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.gallery div {
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* Locations section */
+.locations {
+    background-image: url('resources/img-locations-background.jpg');
+    background-position: center top 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 500px;
+    width: 1200px;
+    max-width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.locations h3{
+    margin: 20px;
+}
+
+.locations p{
+    padding: 10px;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; 
+}
+
+.address {
+    display: flex;
+    background-color: black;
+    width: 300px; 
+    margin: 5px 0;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+    .address {
+        width: 100%; 
+        max-width: 300px; 
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .locations {
+        height: auto; 
+        padding: 20px 0; 
+    }
+}
+
+
+
+/* Footer */
+
+footer{
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact{
+    height: 200px;
+    width: 100%;
+    line-height: 2.5em;
+}
+
+.copyright{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+small{
+    font-size: 12px;
+}
